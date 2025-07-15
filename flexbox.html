@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box layout</title>
+    <style>
+        .container{
+            border: 2px solid salmon;
+            display: flex;
+            /* this justify content is basically for horizontal like a row this is use for only horizontal */
+            /* flex start */
+            /* justify-content: flex-start; */
+            /* flex end */
+            /* justify-content: flex-end; */
+            /* center */
+            /* justify-content: center; */
+            /* space between */
+            /* justify-content: space-between; */
+            /* space evenly */
+            /* justify-content: space-evenly; */
+            /* space around */
+            /* justify-content: space-around; */
+/* But is i want to use the vartically i must use the align-items this is use for verically use */
+
+/* align-items: flex-start; */
+ /* align-items: flex-end; */
+ /* align-items: center; */
+/* flex direction */
+ /* flex-direction: column;
+ flex-direction: column-reverse;
+ flex-direction: row; */
+ /* flex-direction: row-reverse; */
+
+ /* flex-wrap this will go to the next line if needed */
+ flex-wrap: wrap;
+ flex-wrap: wrap-reverse;
+          height: 250px;
+        }
+        .box {
+            border: 2px dashed tomato;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>flex box</h1>
+    <div class="container">
+        <!-- .box{boc-$}*3  that will open 3 div container-->
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div>
+        <div class="box">box-4</div>
+        <div class="box">box-4</div>
+        <div class="box">box-4</div>
+        <div class="box">box-5</div>
+        <div class="box">box-6</div>
+        <div class="box">box-4</div>
+        <div class="box">box-4</div>
+        <div class="box">box-4</div>
+        <div class="box">box-5</div>
+        <div class="box">box-6</div>
+        <div class="box">box-4</div>
+        <div class="box">box-4</div>
+        <div class="box">box-4</div>
+        <div class="box">box-5</div>
+        <div class="box">box-6</div>
+        <div class="box">box-4</div>
+        <div class="box">box-4</div>
+        <div class="box">box-4</div>
+        <div class="box">box-5</div>
+        <div class="box">box-6</div>
+    </div>
+</body>
+</html>
