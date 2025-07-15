@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive web site</title>
+    <style>
+        body{
+            border: 1px solid skyblue;
+            /* this is one part of responsive */
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+        .image-container{
+            display: flex;
+        }
+        .image-container div{
+            width: 50%;
+        }
+        .image-container img{
+            width: 100%;
+        }
+        /* used column reverse in that media */
+        @media screen and (max-width:576px ) {
+            .image-container{
+                flex-direction: column-reverse;
+            }
+            .image-container div{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>responsive website</h1>
+        <ol>
+            <li>View port meta tag </li>
+            <li>CSS Relative unit</li>
+            <li>body max width and hotizontal center align</li>
+            <li>image fluid</li>
+            <li>two column flex and use media query with flex direction column</li>
+            <li>multi column we use grid layout </li>
+            <li>menu responsive: will need javascript </li>
+        </ol>
+        <main>
+            <div class="image-container">
+                <div>
+<img src="./images/istockphoto-1128687123-612x612.jpg" alt="">
+                </div>
+                <div>
+<img src="./images/istockphoto-2150857924-612x612.jpg" alt="">
+                </div>
+            </div>
+            
+            
+        </main>
+    </header>
+</body>
+</html>
