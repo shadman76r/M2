@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 300px;
+            border: 3px solid slateblue;
+        }
+        #box-1{
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+        #box-2{
+            overflow-x: scroll;
+        }
+        .elipsis{
+            width: 300px;
+            white-space: nowrap;
+            overflow: hidden;
+            border: 1px solid saddlebrown;
+            /* this is new  */
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+        <!-- this is also new and this is for letter and other part -->
+        <p title="I am a good learner i am investing at least 6 to 8 hour " class="elipsis">I am a good learner i am investing at least 6 to 8 hour </p>
+    </header>
+    <section>
+        <div id="box-1" class="box">
+            <h3>my text box -1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, cumque. Repellendus voluptate enim eius exercitationem et accusamus minus omnis voluptatum!</p>
+        </div>
+        <div id="box-2" class="box">
+            <h3>my text box -2</h3>
+            <p>Ipsum incidunt sint ea eum. Iure eum itaque dolore distinctio consectetur commodi consequatur debitis adipisci, corrupti repudiandae molestias, quo quasi?</p>
+        </div>
+    </section>
+    
+</body>
+</html>
