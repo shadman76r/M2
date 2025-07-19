@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css vatiable</title>
+    <style>
+        /*  css variable */
+        /* this new but easy like diclaration */
+        /* i can change this part easily this is better */
+        :root{
+            --primary-color:steelblue;
+            --secondary-color:blue;
+            --font-size: 20px;
+        }
+        h1{
+            color: var(--primary-color)
+        }
+        h5{
+            color: var(--secondary-color);
+        }
+        .box{
+            border: 2px solid var(--primary-color);
+            width:400px;
+            width: 80%;
+            width: calc(100% - 100px);
+            font-size: var(--font-size);
+        }
+        .box p{
+            color: var(--primary-color);
+        }
+        .container{
+            display: grid;
+            gap: 20px;
+            /* that -20 is for remove the scroll bar from the web side which is most important */
+            grid-template-rows: 500px;
+            grid-template-columns: 200px calc(100% - 200px - 20px);
+
+        }
+        .sidebar{
+            background-color: lightcoral;
+        }
+        .content{
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>my custom properties</h1>
+    <h5>also commonly known as css variables </h5>
+    <div class="box">
+        <h3>i am doing</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt commodi itaque eius odio, doloremque maxime vero doloribus asperiores laudantium quo praesentium tempora. A consequatur nihil dolore doloribus optio culpa nisi!</p>
+    </div>
+    <div class="container">
+        <div class="sidebar">sidebar</div>
+        <div class="content">main content</div>
+    </div>
+</body>
+</html>
