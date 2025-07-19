@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cricket</title>
+    <style>
+        .field{
+            border: 1px solid steelblue;
+        }
+        .bat{
+            transition: transform 0.1s;
+        }
+
+        .field:hover .bat{
+           transform: rotate(-45deg);
+           /* new thing origin part */
+           transform-origin: top right; 
+
+        }
+        .field:hover .ball{
+            transform: translate(1000px, -500px);
+
+        }
+        /* this is the  ball */
+        .ball{
+          height: 50px ;
+          width: 50px;
+          background-color: red;
+          border-radius: 50%;
+          /* this is the new part this is relative */
+          position: relative;
+          left: 510px;
+          transition: transform 1s ease-out 0.2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="field">
+        <!-- bat image -->
+        <img src="../images/ss-ton-bat-500x500.webp" alt="" class="bat">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
