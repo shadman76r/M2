@@ -1,0 +1,46 @@
+body{
+    max-width: 1170px;
+    /* background-color: brown; */
+    margin: 0 auto;
+}
+.card-section{
+    text-align: center;
+}
+/* parent */
+.card-container{
+    display: flex;
+    gap: 20px;
+    /* single line this is for multiline  */
+    flex-wrap: wrap;
+    
+}
+.card{
+    width: 300px;
+    border: 2px solid rebeccapurple;
+    border-radius: 10px;
+    text-align: left;
+    padding: 40px;
+    /* shadow */
+    /* i can add hover */
+    box-shadow: 10px 10px 10px black;
+}
+.card:hover{
+    background-color: rgba(127, 255, 212, 0.212);
+}
+.card h3{
+    font-size: 1.25em;
+    font-weight: 700;
+    
+}
+.card img{
+    width: 100%;
+    border-radius: 10px;
+}
+.card button{
+    background-color: aquamarine;
+    padding: 10px 30px;
+    font-size: 1.25em;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
