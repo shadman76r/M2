@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity</title>
+    <style>
+        *{
+            /* this will take all the color in the same color as i give the importent */
+            /* this importent is new */
+            color: gold !important;
+        }
+        .purple{
+            color: purple;
+        }
+        h1{
+            color: navy;
+        }
+    </style>
+</head>
+<body>
+    <!-- specificity in css -->
+    <h1>My Awesome Headin 1</h1>
+    <h1 class="purple">My Awesome Headin 1</h1>
+    <h1>My Awesome Headin 1</h1>
+    <h1>My Awesome Headin 1</h1>
+
+    
+</body>
+</html>
