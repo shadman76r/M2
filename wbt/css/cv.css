@@ -1,10 +1,9 @@
 /* font */
-.open-sans-normal {
-  font-family: "Open Sans", sans-serif;
+
+.playwrite-hu-normal {
+  font-family: "Playwrite HU", cursive;
   font-optical-sizing: auto;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
 }
 /* shared style */
 .secondary-bg{
@@ -54,11 +53,11 @@
 }
 
 /* header */
-.header{
+/* .header{
     background-image: url('../images/developer.png'), url('../images/header_bg.png');
     background-repeat: no-repeat;
     background-position: top left, bottom right;
-}
+} */
 /* Nav styles */
 nav{
     display: flex;
